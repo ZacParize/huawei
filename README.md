@@ -1,2 +1,1 @@
-# huawei
-Test tasks
+# Huawei test tasks
