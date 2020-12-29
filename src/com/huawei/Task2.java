@@ -13,8 +13,8 @@ public class Task2 {
     /***
      * Time complexity O(n)*O(26*log26) -> O(n)
      * Extra memory using O(26)
-     * @param listOfCharacters
-     * @return
+     * @param listOfCharacters list of characters
+     * @return unique list of characters
      */
     public static List<Character> findUniqueLetters(List<Character> listOfCharacters) {
         return Optional.ofNullable(listOfCharacters)
