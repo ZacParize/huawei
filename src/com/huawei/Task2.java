@@ -11,13 +11,14 @@ import java.util.TreeSet;
 public class Task2 {
 
     /***
-     * Time complexity O(n)
+     * Time complexity O(n)*O(26*log26) -> O(n)
      * Extra memory using O(26)
      * @param listOfCharacters
      * @return
      */
     public static List<Character> findUniqueLetters(List<Character> listOfCharacters) {
         return Optional.ofNullable(listOfCharacters)
+                // TreeSet here for lexicographical order
                 .map(list -> (List<Character>) new ArrayList<>(new TreeSet<>(list)))
                 .orElse(Collections.emptyList());
     }
